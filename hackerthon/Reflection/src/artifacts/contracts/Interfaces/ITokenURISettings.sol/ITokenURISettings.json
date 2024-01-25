@@ -1,0 +1,139 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "ITokenURISettings",
+  "sourceName": "contracts/Interfaces/ITokenURISettings.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "tokenURIEngine",
+          "type": "address"
+        }
+      ],
+      "name": "InvalidTokenURIEngine",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NotOwnerOrApproved",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "TokenURISettingsNonexistentToken",
+      "type": "error"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "oldTokenURIEngine",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "newTokenURIEngine",
+          "type": "address"
+        }
+      ],
+      "name": "SetProxyTokenURIEngine",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "tokenURIEngine",
+          "type": "address"
+        }
+      ],
+      "name": "SetTokenURIEngine",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "getProxyTokenURIEngine",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getTokenURIEngine",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "tokenURIEngine",
+          "type": "address"
+        }
+      ],
+      "name": "setProxyTokenURIEngine",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "tokenURIEngine",
+          "type": "address"
+        }
+      ],
+      "name": "setTokenURIEngine",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

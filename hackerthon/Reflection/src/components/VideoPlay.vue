@@ -1,0 +1,51 @@
+<template>
+    <vue3videoPlay  
+    width="100%"
+    title=""
+    :src="src"
+    :type="type"
+    @ended="onEnd"
+    :autoPlay="false"/>
+
+</template>
+
+<script>
+// 视频播放器
+import 'vue3-video-play/dist/style.css'
+import vue3videoPlay from 'vue3-video-play'
+// import { videoPlay } from 'vue-video-play'
+
+export default {
+    name: 'myVideoPlay',
+    setup(props){
+        console.log('src:', props.src);
+    },
+    props: {
+        src: String
+    },
+
+    data() {
+        return {
+            type: 'video/mp4', //视频类型
+        }
+    },
+    components: {
+        vue3videoPlay
+  },
+
+    methods:{
+
+        onEnd() {
+            console.log(this.scr, 'ended')
+        },
+
+        checkVideo() {
+            
+            }
+
+    }, 
+
+
+}
+
+</script>

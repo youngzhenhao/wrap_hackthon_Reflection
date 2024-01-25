@@ -1,0 +1,206 @@
+{
+	"compiler": {
+		"version": "0.8.23+commit.f704f362"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "CreateFail",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "address payable",
+								"name": "implementation",
+								"type": "address"
+							},
+							{
+								"components": [
+									{
+										"internalType": "address",
+										"name": "currency",
+										"type": "address"
+									},
+									{
+										"internalType": "uint256",
+										"name": "premium",
+										"type": "uint256"
+									},
+									{
+										"internalType": "address",
+										"name": "feeRecipient",
+										"type": "address"
+									},
+									{
+										"internalType": "uint16",
+										"name": "mintFeePercent",
+										"type": "uint16"
+									},
+									{
+										"internalType": "uint16",
+										"name": "burnFeePercent",
+										"type": "uint16"
+									}
+								],
+								"internalType": "struct Asset",
+								"name": "asset",
+								"type": "tuple"
+							},
+							{
+								"internalType": "bytes",
+								"name": "immutableData",
+								"type": "bytes"
+							},
+							{
+								"internalType": "bytes",
+								"name": "initData",
+								"type": "bytes"
+							}
+						],
+						"internalType": "struct AgencySettings",
+						"name": "agencySettings",
+						"type": "tuple"
+					},
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "implementation",
+								"type": "address"
+							},
+							{
+								"internalType": "bytes",
+								"name": "immutableData",
+								"type": "bytes"
+							},
+							{
+								"internalType": "bytes",
+								"name": "initData",
+								"type": "bytes"
+							}
+						],
+						"internalType": "struct AppSettings",
+						"name": "appSettings",
+						"type": "tuple"
+					},
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"name": "deployWrap",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "appInstance",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "agencyInstance",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getOwner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"ReflectionFactoryImp.sol": "FactoryImp"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Interfaces/IERC7527Agency.sol": {
+			"keccak256": "0xa36f63afe482e1b3f03816a16ee8ae1aae7acd3e6bbc54606fbff471bd9db6fc",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4dfeeb9720ab0c2eafe547213aaaad5af8c98dc39498ec1c16f0a54e6fdb4828",
+				"dweb:/ipfs/QmbnxEpMdgHEZxLnXoEsz744SNrpjERnqrWoSUA8jACaue"
+			]
+		},
+		"Interfaces/IERC7527Factory.sol": {
+			"keccak256": "0xfa7e49de14dfafc23e8949577015beddde4dc7a8c7f783881f9054fde4f866ef",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://30d60b4fe7d5b2975ce1d84a8ca76c4f5eb74248f91afef58523620a08334b2f",
+				"dweb:/ipfs/QmfZFoDHDkrFMcpn1hQqbKv3JiJnCqyT85sSVdUz1JYDsU"
+			]
+		},
+		"ReflectionFactoryImp.sol": {
+			"keccak256": "0x492298b4daa46b2aaecc9f822326e2bb09ac29d6376a033dfc64bb7c33d9b784",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3794abaf2ae27a5c8ab41013c84a9ddf44d3a46ea49ab7a6a6b6d25dc87524a1",
+				"dweb:/ipfs/QmaSJGzTGenijKPEkrBzCW5NBDaY2tNGdV5e8LhdQtAaZA"
+			]
+		},
+		"clones-with-immutable-args/ClonesWithImmutableArgs.sol": {
+			"keccak256": "0xdfde52e68a5d5be19c1afcfd8c7a2807b0bb903317b102ca0db4aace08299a6b",
+			"license": "BSD",
+			"urls": [
+				"bzz-raw://2d3c5b66e10b637fe12f50298b6fa207ab109ec26f87bac772974b13417a8d8a",
+				"dweb:/ipfs/QmNuqsvFEgYRuuZMCyh3ZcukxikuK1DkuFfRdiBoCpmnWn"
+			]
+		}
+	},
+	"version": 1
+}
